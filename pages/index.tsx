@@ -1,20 +1,17 @@
 import type { NextPage } from 'next'
 import { Button } from '@nextui-org/react'
 
-// const Component = () => (
-//     <Button onClick={() => console.log('im a simple button')}>Click me</Button>
-// )
+import { Layout } from '../components/layouts'
 
 const Home: NextPage = () => {
     return (
-        <div>
+        <Layout title="Listado de pokemons" pokemon="Charmander">
             <h1>Hello world</h1>
             <hr />
-            {/* <Component /> */}
             <Button color={'success'} onClick={() => console.log('im a simple button')}>
                 Click me
             </Button>
-        </div>
+        </Layout>
     )
 }
 
